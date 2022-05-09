@@ -9,6 +9,7 @@ nltk = "*"
 sklearn = "*"
 wget = "*"
 pytest = "*"
+project3 = {path = "."}
 
 [dev-packages]
 

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ccd2ee51e0d36a2a7b72ad03afdb3bafa7f68e83fe30b03a5d09a565057316f7"
+            "sha256": "977b582c242ead3622922674e9a10de090be9e051940b0818244f7e4c2c9eb0f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -123,6 +123,10 @@
             ],
             "markers": "python_version >= '3.6'",
             "version": "==1.0.0"
+        },
+        "project3": {
+            "path": ".",
+            "version": "==1.0"
         },
         "py": {
             "hashes": [
