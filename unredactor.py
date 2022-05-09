@@ -18,10 +18,12 @@ warnings.filterwarnings("ignore")
 
 nltk.download('stopwords',  quiet=True)
 
+print('Downloading unredactor.tsv file')
 # Downloading the unredactor.tsv if not existing in the directory
 if not os.path.exists('unredactor.tsv'):
     wget.download('https://raw.githubusercontent.com/sanojdoddapaneni/cs5293sp22/main/unredactor.tsv')
 
+print('\nExecuting the code, wait for 5 - 10 minutes\n')
 # Reading and creating a dataframe from the tsv file
 df = pandas.read_csv("unredactor.tsv",on_bad_lines='skip', sep='\t')
 df.columns = ['waste','Data','Name','Sentence']
