@@ -7,6 +7,7 @@ This project is developed using python and command line tools in Ubuntu.
 **_For Data Cleaning -_** _https://machinelearningknowledge.ai/11-techniques-of-text-preprocessing-using-nltk-in-python/_  
 **_Vectorization -_** _https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html_  
 **_For Modeling the data -_** _https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html_  
+
 **Installation directions -** In this project, we use the packages below -
  - pandas
  - nltk
@@ -62,14 +63,14 @@ To run the function, we need to run the command below in main directory -
 pipenv run python unredactor.py
 ```
 
-**Note -** _The unredactor.py program could take up to 10 minutes to execute and print the results accordingly._
+**Note -** _The unredactor.py program needs atleast 2GB Memory in the instance to run and could take up to 10 minutes to execute and print the results accordingly._
 
 #### Test Cases - 
 Here, we have created a new directory called **tests** and then created a file called **test_code.py** which contains different functions of test cases for each function in redactor.py. Each test case in the file is explained below accordingly.
 
 Firstly, we import the packages sys to execute test file for all the directories of the project and provide the path accordingly and then import unredactor.py within the folder and then finally we should import package pytest to run testcases accordingly. Pyest modules works on pytest framework and can be installed using the command below -  
 ```
-pipenv install pytest command
+pipenv install pytest
 ```
 
 **test_readinput() function -** In this function, we test if there are existing files in  folder to be read as input. the test case will be passed if there are existing files for processing.
@@ -87,7 +88,7 @@ pipenv run python -m pytest
 
 Once the command is passed, it will show the execution of test cases.
 
-**Note -** _The test_code.py or test cases program could take up to 10 minutes to execute and validate the test case results accordingly._
+**Note -** _The test_code.py or test cases program needs atleast 2GB Memory in the instance to run and could take up to 10 minutes to execute and validate the test case results accordingly._
 
 #### Assumptions and Possible Bugs -  
 In the unredactor.py program, my assumption is that the data is not cleaned and we need to consider the data with the label training and validation and model according and then test the trained model on testing labeled data. Changes to the data in unredactor.tsv file might result in different values for the scores.
