@@ -24,7 +24,7 @@ pipenv install [package_name]
 
 A Pipfile is already provided in the project repository and once cloned, we can use the command below to install the packages in the Pipfile -  
 ```
-pipenv install
+pipenv install .
 ```
 
 #### Project Description -
