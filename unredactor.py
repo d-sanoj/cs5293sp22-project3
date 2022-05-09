@@ -18,6 +18,10 @@ warnings.filterwarnings("ignore")
 
 nltk.download('stopwords',  quiet=True)
 
+print('Checking and removing the old unredactor.tsv File')
+if os.path.exists("unredactor.tsv"):
+  os.remove("unredactor.tsv")
+
 print('Downloading unredactor.tsv file')
 # Downloading the unredactor.tsv if not existing in the directory
 if not os.path.exists('unredactor.tsv'):

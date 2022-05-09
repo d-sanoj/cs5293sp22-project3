@@ -30,7 +30,7 @@ pipenv install
 #### Project Description -
 **unredactor.py file -** This file constains the functions and execution code for the program for desired output. Each function is further explained below.
 
-We initially, use the library os and wget where we check if unredactor.tsv file exists in the directory or not and if it does not exist, we download the unredactor.tsv file using the view raw link from the repository. This will download the file in the main directory as required. This unredactor.tsv file has 4 columns githubname, type of data, name which is redacted and sentence where the name is redacted. These columns are not labelled initially.
+We initially, use the library os and wget where we check and remove the old unredactor.tsv file exists in the directory an  download the latest unredactor.tsv file using the view raw link from the repository. This will download the file in the main directory as required. This unredactor.tsv file has 4 columns githubname, type of data, name which is redacted and sentence where the name is redacted. These columns are not labelled initially.
 
 Once the file is downloaded, we create dataframe for the data read and assign labels accordngly. Further, apply label encoding to names column to yeild bette results.
 
